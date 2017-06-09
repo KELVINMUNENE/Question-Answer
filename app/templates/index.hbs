@@ -5,8 +5,9 @@ Feel free to make comments or requests for specific problems!
 Thanks everyone! Happy Coding! I will be posting more soon. Cheers!
 </p>
 
+
 <ol>
   {{#each model as |question|}}
-     <li><b>{{question.author}}</b> {{question.question}} in {{question.additional}}</li>
+    {{question-tile question=question destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ol>
