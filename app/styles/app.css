@@ -1,3 +1,8 @@
+
+
+@import url('https://fonts.google.com/css.family=Fondamento|Josefin+Sans|Judson');
+
 .container-fluid{
-  color:white;  
+  color:white;
+    font-family: 'Judson';
 }
