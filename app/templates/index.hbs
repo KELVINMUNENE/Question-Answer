@@ -7,9 +7,17 @@ Thanks everyone! Happy Coding! I will be posting more soon. Cheers!
 
 
 <ol>
-  {{#each model as |question|}}
+  {{#each model.question as |question|}}
     {{question-tile question=question  update="update" destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ol>
 
 {{new-question saveQuestion2="saveQuestion3"}}
+
+<h2> All Answers </h2>
+
+<ul>
+  {{#each model.answer as |answer|}}
+    <li>{{answer.content}} {{answer.author}}</li>
+  {{/each}}
+</ul>
